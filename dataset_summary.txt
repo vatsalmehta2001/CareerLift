@@ -1,0 +1,156 @@
+Dataset Shape: (32561, 15)
+
+Column Names:
+- age
+- workclass
+- fnlwgt
+- education
+- education_num
+- marital_status
+- occupation
+- relationship
+- race
+- sex
+- capital_gain
+- capital_loss
+- hours_per_week
+- native_country
+- income
+
+Missing Values Count:
+- age: 0 (0.00%)
+- workclass: 1836 (5.64%)
+- fnlwgt: 0 (0.00%)
+- education: 0 (0.00%)
+- education_num: 0 (0.00%)
+- marital_status: 0 (0.00%)
+- occupation: 1843 (5.66%)
+- relationship: 0 (0.00%)
+- race: 0 (0.00%)
+- sex: 0 (0.00%)
+- capital_gain: 0 (0.00%)
+- capital_loss: 0 (0.00%)
+- hours_per_week: 0 (0.00%)
+- native_country: 583 (1.79%)
+- income: 0 (0.00%)
+
+Category Distributions:
+
+WORKCLASS:
+- Private: 22696 (69.70%)
+- Self-emp-not-inc: 2541 (7.80%)
+- Local-gov: 2093 (6.43%)
+- State-gov: 1298 (3.99%)
+- Self-emp-inc: 1116 (3.43%)
+- Federal-gov: 960 (2.95%)
+- Without-pay: 14 (0.04%)
+- Never-worked: 7 (0.02%)
+
+EDUCATION:
+- HS-grad: 10501 (32.25%)
+- Some-college: 7291 (22.39%)
+- Bachelors: 5355 (16.45%)
+- Masters: 1723 (5.29%)
+- Assoc-voc: 1382 (4.24%)
+- 11th: 1175 (3.61%)
+- Assoc-acdm: 1067 (3.28%)
+- 10th: 933 (2.87%)
+- 7th-8th: 646 (1.98%)
+- Prof-school: 576 (1.77%)
+- 9th: 514 (1.58%)
+- 12th: 433 (1.33%)
+- Doctorate: 413 (1.27%)
+- 5th-6th: 333 (1.02%)
+- 1st-4th: 168 (0.52%)
+- Preschool: 51 (0.16%)
+
+MARITAL_STATUS:
+- Married-civ-spouse: 14976 (45.99%)
+- Never-married: 10683 (32.81%)
+- Divorced: 4443 (13.65%)
+- Separated: 1025 (3.15%)
+- Widowed: 993 (3.05%)
+- Married-spouse-absent: 418 (1.28%)
+- Married-AF-spouse: 23 (0.07%)
+
+OCCUPATION:
+- Prof-specialty: 4140 (12.71%)
+- Craft-repair: 4099 (12.59%)
+- Exec-managerial: 4066 (12.49%)
+- Adm-clerical: 3770 (11.58%)
+- Sales: 3650 (11.21%)
+- Other-service: 3295 (10.12%)
+- Machine-op-inspct: 2002 (6.15%)
+- Transport-moving: 1597 (4.90%)
+- Handlers-cleaners: 1370 (4.21%)
+- Farming-fishing: 994 (3.05%)
+- Tech-support: 928 (2.85%)
+- Protective-serv: 649 (1.99%)
+- Priv-house-serv: 149 (0.46%)
+- Armed-Forces: 9 (0.03%)
+
+RELATIONSHIP:
+- Husband: 13193 (40.52%)
+- Not-in-family: 8305 (25.51%)
+- Own-child: 5068 (15.56%)
+- Unmarried: 3446 (10.58%)
+- Wife: 1568 (4.82%)
+- Other-relative: 981 (3.01%)
+
+RACE:
+- White: 27816 (85.43%)
+- Black: 3124 (9.59%)
+- Asian-Pac-Islander: 1039 (3.19%)
+- Amer-Indian-Eskimo: 311 (0.96%)
+- Other: 271 (0.83%)
+
+SEX:
+- Male: 21790 (66.92%)
+- Female: 10771 (33.08%)
+
+NATIVE_COUNTRY:
+- United-States: 29170 (89.59%)
+- Mexico: 643 (1.97%)
+- Philippines: 198 (0.61%)
+- Germany: 137 (0.42%)
+- Canada: 121 (0.37%)
+- Puerto-Rico: 114 (0.35%)
+- El-Salvador: 106 (0.33%)
+- India: 100 (0.31%)
+- Cuba: 95 (0.29%)
+- England: 90 (0.28%)
+- Jamaica: 81 (0.25%)
+- South: 80 (0.25%)
+- China: 75 (0.23%)
+- Italy: 73 (0.22%)
+- Dominican-Republic: 70 (0.21%)
+- Vietnam: 67 (0.21%)
+- Guatemala: 64 (0.20%)
+- Japan: 62 (0.19%)
+- Poland: 60 (0.18%)
+- Columbia: 59 (0.18%)
+- Taiwan: 51 (0.16%)
+- Haiti: 44 (0.14%)
+- Iran: 43 (0.13%)
+- Portugal: 37 (0.11%)
+- Nicaragua: 34 (0.10%)
+- Peru: 31 (0.10%)
+- Greece: 29 (0.09%)
+- France: 29 (0.09%)
+- Ecuador: 28 (0.09%)
+- Ireland: 24 (0.07%)
+- Hong: 20 (0.06%)
+- Trinadad&Tobago: 19 (0.06%)
+- Cambodia: 19 (0.06%)
+- Thailand: 18 (0.06%)
+- Laos: 18 (0.06%)
+- Yugoslavia: 16 (0.05%)
+- Outlying-US(Guam-USVI-etc): 14 (0.04%)
+- Hungary: 13 (0.04%)
+- Honduras: 13 (0.04%)
+- Scotland: 12 (0.04%)
+- Holand-Netherlands: 1 (0.00%)
+
+INCOME:
+- <=50K: 24720 (75.92%)
+- >50K: 7841 (24.08%)

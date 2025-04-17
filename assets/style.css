@@ -1,0 +1,371 @@
+/* Career Path Optimizer Dashboard - Dark Theme
+   Created by Vatsal Mehta
+   A sophisticated machine learning dashboard for career optimization
+*/
+
+/* Base Styles */
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Header */
+.header-container {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #4CAF50;
+}
+
+.app-header {
+    font-size: 2.2rem;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.app-description {
+    font-size: 1.1rem;
+    margin: 10px 0 0 0;
+    color: #b0b0b0;
+    font-weight: 300;
+}
+
+/* Input Panel */
+.input-panel {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 25px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.input-panel h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.input-panel label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Results Panel */
+.results-panel {
+    flex: 2;
+    min-width: 600px;
+    padding: 25px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.result-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.result-section:last-child {
+    border-bottom: none;
+}
+
+.result-section h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-left: 4px solid #4CAF50;
+    padding-left: 10px;
+}
+
+/* Input Controls */
+.dash-dropdown .Select-control {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.dash-dropdown .Select-menu-outer {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-top-color: #444;
+    color: #e0e0e0;
+}
+
+.dash-dropdown .Select-value-label {
+    color: #e0e0e0 !important;
+}
+
+.dash-dropdown .Select-menu {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+.dash-dropdown .Select-option:hover {
+    background-color: #3a3a3a;
+}
+
+.dash-dropdown .Select-option.is-selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dash-dropdown .Select-arrow {
+    border-color: #888 transparent transparent;
+}
+
+.dash-dropdown .Select-placeholder {
+    color: #888;
+}
+
+/* Radio Items */
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+/* Slider */
+.rc-slider-track {
+    background-color: #4CAF50;
+}
+
+.rc-slider-handle {
+    border-color: #4CAF50;
+    background-color: #4CAF50;
+}
+
+.rc-slider-handle:hover {
+    border-color: #3d8b40;
+}
+
+.rc-slider-handle:active {
+    border-color: #3d8b40;
+    box-shadow: 0 0 5px #4CAF50;
+}
+
+.rc-slider-rail {
+    background-color: #444;
+}
+
+.rc-slider-dot {
+    border-color: #444;
+    background-color: #2a2a2a;
+}
+
+.rc-slider-dot-active {
+    border-color: #4CAF50;
+}
+
+.rc-slider-mark-text {
+    color: #888;
+}
+
+/* Button */
+.calculate-button {
+    margin-top: 30px;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.calculate-button:hover {
+    background-color: #3d8b40;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.calculate-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Graphs */
+.dash-graph {
+    background-color: #1e1e1e !important;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Path Output */
+.path-output {
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.no-data-message {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+.path-step {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 5px;
+    border-left: 4px solid #4CAF50;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.path-step:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.path-step:last-child {
+    margin-bottom: 0;
+}
+
+.path-arrow {
+    font-size: 24px;
+    color: #4CAF50;
+    text-align: center;
+    margin: 10px 0;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.step-number {
+    background-color: #4CAF50;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.step-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.step-content {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #444;
+}
+
+.step-content p {
+    margin: 5px 0;
+    color: #b0b0b0;
+}
+
+.path-footer {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #444;
+    color: #b0b0b0;
+    text-align: center;
+}
+
+/* Disclaimer */
+.disclaimer-container {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid #FF9800;
+}
+
+.disclaimer-title {
+    color: #FF9800;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.disclaimer-text {
+    color: #b0b0b0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.disclaimer-text strong {
+    color: #FF9800;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .input-panel {
+        max-width: 100%;
+    }
+}
+
+/* Custom output text */
+#age-output, #hours-output {
+    font-size: 1rem;
+    color: #4CAF50;
+    margin-top: 5px;
+    font-weight: 500;
+} 
